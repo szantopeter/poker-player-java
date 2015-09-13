@@ -1,23 +1,13 @@
 package org.leanpoker.player;
 
-import com.google.gson.JsonElement;
-
-import java.util.Map;
+import org.leanpoker.player.gamestate.GameState;
 
 public class Player {
 
-    public static int betRequest(JsonElement request) {
-
-        for (Map.Entry<String, JsonElement> entry : request.getAsJsonObject().entrySet()) {
-
-            System.out.println(entry.getKey() + " : " + entry.getValue());
-
-        }
-
+    public static int betRequest(GameState gameState) {
         return 0;
-
     }
 
-    public static void showdown(JsonElement game) {
+    public static void showdown(GameState gameState) {
     }
 }
